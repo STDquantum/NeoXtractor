@@ -179,6 +179,9 @@ class NPKFile:
 
                 self.indices.append(index)
 
+        # 新增：按文件大小从大到小排序  
+        self.indices.sort(key=lambda idx: idx.file_original_length, reverse=True)  
+
     def is_entry_loaded(self, index: int) -> bool:
         """Check if an entry is already loaded.
 

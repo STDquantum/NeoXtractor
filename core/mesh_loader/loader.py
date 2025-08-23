@@ -34,8 +34,8 @@ class MeshLoader:
     def _initialize_parsers(self) -> List[BaseMeshParser]:
         """Initialize the list of available parsers in order of preference."""
         return [
-            MeshParser1(),
-            MeshParser2(),
+            # MeshParser1(),
+            # MeshParser2(),
             MeshParser3(),
             MeshParser4()
         ]
