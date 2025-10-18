@@ -13,6 +13,7 @@ from core.npk.enums import CompressionType
 from core.npk.class_types import NPKEntry
 from core.rotor import Rotor
 
+_rotor_instance = None  
 def init_rotor():
     """Initializes the rotor instance."""
     asdf_dn = 'j2h56ogodh3se'
